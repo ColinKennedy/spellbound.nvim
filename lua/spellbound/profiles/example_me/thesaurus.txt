@@ -1,0 +1,52 @@
+# Note: Use forward-slash for "real" lines. All other lines are considered comment lines.
+#
+# Important: The left and right-hand of / must both exist. Otherwise `z=` will
+# not replace the suggestion.
+#
+# Reference: `:help spellsuggest`
+
+# Words that could just be "data"
+content/data
+information/data
+
+# Miscellaneous
+activate/run
+actual/real
+adjust/change
+customize/change
+damaged/broken
+detected/found
+determine/decide
+difficult/hard
+encountered/found
+extract/get
+factor/part
+flows/goes
+frequently/often
+generate/create
+generic/general
+immediately/right away
+large/big
+miscellaneous/various
+modify/change
+necessary/needed
+observe/check
+observe/see
+occur/happen
+operate/run
+particular/specific
+perhaps/maybe
+poor/bad
+prepare/ready
+previously/in the past
+relies/needs
+require/need
+segment/part
+separate/split
+significant/important
+strange/odd
+trigger/run
+weird/odd
+
+# Words that I think are more generally applicable to programmers (and are simple)
+pass/send
