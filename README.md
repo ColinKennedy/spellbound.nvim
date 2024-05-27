@@ -3,10 +3,10 @@ spellbound - Alternative word recommendations that you can control.
 
 [![Neovim](https://img.shields.io/badge/Neovim%200.10+-brightgreen?style=for-the-badge)](https://neovim.io)
 [![Lua](https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua)](https://www.lua.org)
-[![Stylua](https://img.shields.io/github/actions/workflow/status/ColinKennedy/spellbound.nvim/stylua.yml?branch=main&style=for-the-badge)](https://github.com/ColinKennedy/spellbound.nvim/actions/workflows/stylua.yml)
-[![Luacheck](https://img.shields.io/github/actions/workflow/status/ColinKennedy/spellbound.nvim/luacheck.yml?branch=main&style=for-the-badge)](https://github.com/ColinKennedy/spellbound.nvim/actions/workflows/luacheck.yml)
-[![Lua-Typecheck](https://img.shields.io/github/actions/workflow/status/ColinKennedy/spellbound.nvim/lua-typecheck.yml?branch=main&style=for-the-badge)](https://github.com/ColinKennedy/spellbound.nvim/actions/workflows/lua-typecheck.yml)
-[![Test](https://img.shields.io/github/actions/workflow/status/ColinKennedy/spellbound.nvim/test.yml?branch=main&style=for-the-badge)](https://github.com/ColinKennedy/spellbound.nvim/actions/workflows/test.yml)
+[![Stylua](https://img.shields.io/github/actions/workflow/status/ColinKennedy/spellbound.nvim/stylua.yml?branch=main&style=for-the-badge&label=stylua)](https://github.com/ColinKennedy/spellbound.nvim/actions/workflows/stylua.yml)
+[![Luacheck](https://img.shields.io/github/actions/workflow/status/ColinKennedy/spellbound.nvim/luacheck.yml?branch=main&style=for-the-badge&label=luacheck)](https://github.com/ColinKennedy/spellbound.nvim/actions/workflows/luacheck.yml)
+[![Lua-Typecheck](https://img.shields.io/github/actions/workflow/status/ColinKennedy/spellbound.nvim/lua-typecheck.yml?branch=main&style=for-the-badge&label=lua-typecheck)](https://github.com/ColinKennedy/spellbound.nvim/actions/workflows/lua-typecheck.yml)
+[![Test](https://img.shields.io/github/actions/workflow/status/ColinKennedy/spellbound.nvim/test.yml?branch=main&style=for-the-badge&label=test)](https://github.com/ColinKennedy/spellbound.nvim/actions/workflows/test.yml)
 
 
 # Features
