@@ -1,6 +1,5 @@
 ---
-# TODO: Remove `push` later
-on: [push, pull_request]
+on: [pull_request]
 name: lint
 
 jobs:

@@ -24,12 +24,12 @@
 
 --- @class SpellboundLoggingConfiguration
 ---     Control whether or not logging is printed to the console or to disk.
---- @field level "trace" | "debug" | "info" | "warn" | "error" | "fatal"
+--- @field level ("trace" | "debug" | "info" | "warn" | "error" | "fatal")?
 ---     Any messages above this level will be logged.
---- @field use_console boolean
+--- @field use_console boolean?
 ---     Should print the output to neovim while running. Warning: This is very
 ---     spammy. You probably don't want to enable this unless you have to.
---- @field use_file boolean
+--- @field use_file boolean?
 ---     Should write to a file.
 
 --- @class SpellboundProfile

@@ -183,7 +183,7 @@ local function _set_profile_enabled(name, profile, enabled)
   _set_comma_option(profile.spellsuggest, "spellsuggest", enabled)
 
   if enabled then
-    vim.wo.spell = true
+    vim.opt_local.spell = true
     _append_profile_stack()
     _build_dictionaries_if_needed(name, profile)
   else

@@ -12,4 +12,4 @@ local _CURRENT_DIRECTORY =
 vim.o.runtimepath = vim.o.runtimepath .. "," .. _CURRENT_DIRECTORY
 vim.o.spelllang = "en_us,dictionary"
 vim.o.spellsuggest = "file:" .. vim.fs.joinpath(_CURRENT_DIRECTORY, "thesaurus.txt")
-vim.wo.spell = true
+vim.opt_local.spell = true

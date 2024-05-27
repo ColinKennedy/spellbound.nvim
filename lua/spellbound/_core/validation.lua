@@ -96,7 +96,10 @@ end
 local function _validate_logging(data)
   local level = data.level
 
-  if level ~= nil then
+  if level == nil then
+    -- NOTE: Set a default level if none is written
+    data.level = "info"
+  else
     if type(level) ~= "string" then
       error(string.format('Option level "%s / %s" must be a string.', data, level))
 
@@ -118,24 +121,38 @@ local function _validate_logging(data)
     end
   end
 
-  if data.use_console ~= nil and type(data.use_console) ~= "boolean" then
-    error(
-      string.format(
-        'Option use_console "%s / %s" must be a boolean.',
-        data,
-        data.use_console
+  if data.use_console == nil then
+    -- NOTE: Don't print to Neovim (so we don't spam the user)
+    data.use_console = false
+  else
+    if type(data.use_console) ~= "boolean" then
+      error(
+        string.format(
+          'Option use_console "%s / %s" must be a boolean.',
+          data,
+          data.use_console
+        )
       )
-    )
 
-    return
+      return
+    end
   end
 
-  if data.use_file ~= nil and type(data.use_file) ~= "boolean" then
-    error(
-      string.format('Option use_file "%s / %s" must be a boolean.', data, data.use_file)
-    )
+  if data.use_file == nil then
+    -- NOTE: Don't make files on-disk by default
+    data.use_file = false
+  else
+    if type(data.use_file) ~= "boolean" then
+      error(
+        string.format(
+          'Option use_file "%s / %s" must be a boolean.',
+          data,
+          data.use_file
+        )
+      )
 
-    return
+      return
+    end
   end
 end
 
