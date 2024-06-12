@@ -1,5 +1,5 @@
 # spellbound.nvim
-spellbound - Alternative word recommendations that you can control.
+`spellbound.nvim` - Alternative word recommendations that you can control.
 
 [![Neovim](https://img.shields.io/badge/Neovim%200.10+-brightgreen?style=for-the-badge)](https://neovim.io)
 [![Lua](https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua)](https://www.lua.org)
@@ -13,19 +13,21 @@ spellbound - Alternative word recommendations that you can control.
 - Go to next / previous recommendation
 - Show recommendations
 - Native tree-sitter support
-- Auto-detect when a dictionary needs to be recompiled
+- Auto-rebuilds dictionary parts
+    - Note: Is compatible with [vim-spellsync](https://github.com/micarmst/vim-spellsync)
 
 
 # Disclaimer
-spellbound.nvim is both a plugin and a workflow. You might get decent results
+`spellbound.nvim` is both a plugin and a workflow. You might get decent results
 using this plugin's default values but, for best performance, you should make
-your own recommendations. You only get out of spellbound.nvim what you're
+your own recommendations. You only get out of `spellbound.nvim` what you're
 willing to put into it.
 
 
 # Install
 - [lazy.nvim](https://github.com/folke/lazy.nvim)
 
+## Defaults
 ```lua
 {
   "ColinKennedy/spellbound.nvim",
@@ -77,7 +79,7 @@ require("lualine").setup {
 
 # Setup
 ## Built-in Example
-To see a configuration in-action, you can use this built-in.
+`spellbound.nvim` comes with a starting example configuration.
 
 ```lua
 config = function()
@@ -93,8 +95,11 @@ To see what's in the profile, print its contents
 print(vim.inspect(require("spellbound.profiles.example_me")))
 ```
 
+You can use this to build your own configuration.
+
+
 ## Dynamic Example
-This shows everything at once. Most of the time you won't need all of this.
+This shows every feature at once. Most of the time you won't need all of this.
 
 ```lua
 {
@@ -150,21 +155,21 @@ This shows everything at once. Most of the time you won't need all of this.
     }
   end,
   keys = {
-      {
-          "[r",
-          "<Plug>(SpellboundGoToPreviousRecommendation)",
-          desc = "Go to the previous recommendation.",
-      },
-      {
-          "]r",
-          "<Plug>(SpellboundGoToNextRecommendation)",
-          desc = "Go to the next recommendation.",
-      },
-      {
-          "<leader>tss",
-          ":Spellbound toggle-profile strict<CR>",
-          desc = "[t]oggle all [s]trict [s]pelling mistakes.",
-      },
+    {
+      "[r",
+      "<Plug>(SpellboundGoToPreviousRecommendation)",
+      desc = "Go to the previous recommendation.",
+    },
+    {
+      "]r",
+      "<Plug>(SpellboundGoToNextRecommendation)",
+      desc = "Go to the next recommendation.",
+    },
+    {
+      "<leader>tss",
+      ":Spellbound toggle-profile strict<CR>",
+      desc = "[t]oggle all [s]trict [s]pelling mistakes.",
+    },
   }
 }
 ```
@@ -179,7 +184,7 @@ a restriction - "You may only use 1000 unique words" and made myself a list.
 Unfortunately, old habits die hard and sometimes I would forget my list or
 fall back to words that are hard for non-native speakers to understand.
 
-spellbound.nvim exists in order to:
+`spellbound.nvim` exists in order to:
 
 - Help point out hard words and suggest easier words instead
 - Jump to these suggested words easily
@@ -191,6 +196,6 @@ English speakers, chances are its even easier to read for native speakers too.
 
 # Alternatives
 If you don't create about highlighting text in the current file and just want
-(Neo)vim to auto-correct your words as you type, you don't need `spellbound`.
+(Neo)vim to auto-correct your words as you type, you don't need `spellbound.nvim`.
 Look up [:help Abbreviations](https://neovim.io/doc/user/usr_24.html#24.7)
 instead.

@@ -1,8 +1,13 @@
+name: docs
+
 on:
   push:
     branches:
       - main
-name: docs
+      - second_pass
+
+permissions:
+  contents: write
 
 jobs:
   docs:
